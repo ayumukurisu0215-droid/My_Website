@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Website - ポートフォリオサイト
 
-## Getting Started
+モダンなWeb技術を活用した、パーソナルポートフォリオサイトです。Next.js 16とReact 19の最新機能を駆使し、美しくインタラクティブなユーザー体験を実現しています。
 
-First, run the development server:
+## ✨ プロジェクトの特徴
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 🎨 モダンなデザイン
+- **グラデーションとガラスモーフィズム**: 最新のデザイントレンドを取り入れた視覚的に魅力的なUI
+- **ダークモード対応**: ユーザーの好みに応じた快適な閲覧体験
+- **レスポンシブデザイン**: モバイル、タブレット、デスクトップすべてで最適な表示
+
+### 🚀 パフォーマンス最適化
+- **Next.js App Router**: 最新のApp Routerによる高速なページ遷移
+- **静的サイト生成（SSG）**: ビルド時に最適化された静的ページ生成
+- **Turbopack**: 高速なビルドと開発体験
+
+### 💫 インタラクティブな要素
+- **スムーズなアニメーション**: ページ読み込み時のフェードイン・スライドアップ効果
+- **ホバーエフェクト**: カードやメニューアイテムに洗練されたインタラクション
+- **段階的なアニメーション**: セクションごとにタイミングを調整した表示
+
+## 🛠️ 技術スタック
+
+### フロントエンド
+- **Next.js 16.1.3** - Reactフレームワーク（App Router）
+- **React 19.2.3** - 最新のReact機能を活用
+- **TypeScript 5** - 型安全性の確保
+- **Tailwind CSS 4** - ユーティリティファーストのCSSフレームワーク
+
+### 開発ツール
+- **ESLint 9** - コード品質の維持
+- **PostCSS** - CSS処理の最適化
+
+## 📁 プロジェクト構造
+
+```
+my-website/
+├── app/
+│   ├── page.tsx          # ホームページ
+│   ├── profile/
+│   │   └── page.tsx      # プロフィールページ
+│   └── restaurant/
+│       └── page.tsx      # レストランページ（モダンなデザインの実装例）
+├── public/               # 静的ファイル
+├── next.config.ts        # Next.js設定
+├── tailwind.config.js    # Tailwind CSS設定
+└── tsconfig.json         # TypeScript設定
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 主な実装内容
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. ホームページ (`/`)
+シンプルで洗練されたデザインのランディングページ
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. プロフィールページ (`/profile`)
+個人情報を紹介するページ
 
-## Learn More
+### 3. レストランページ (`/restaurant`)
+**モダンなWebデザインの実装例**として、以下の機能を実装：
+- グラデーションテキストとガラスモーフィズム効果
+- スムーズなアニメーションとトランジション
+- インタラクティブなカードコンポーネント
+- レスポンシブなグリッドレイアウト
+- ホバーエフェクトと視覚的フィードバック
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 セットアップ方法
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 必要な環境
+- Node.js 18以上
+- npm または yarn
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### インストール
 
-## Deploy on Vercel
+```bash
+# リポジトリをクローン
+git clone <repository-url>
+cd my-website
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 依存関係をインストール
+npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 開発サーバーを起動
+npm run dev
+```
+
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いて確認できます。
+
+### ビルド
+
+```bash
+# 本番用ビルド
+npm run build
+
+# 本番サーバーを起動
+npm start
+```
+
+### リント
+
+```bash
+npm run lint
+```
+
+## 💡 開発のこだわり
+
+### コード品質
+- **TypeScript**: 型安全性により、実行時エラーを事前に防止
+- **ESLint**: 一貫したコードスタイルの維持
+- **コンポーネント設計**: 再利用可能で保守性の高いコンポーネント構造
+
+### ユーザー体験
+- **パフォーマンス**: 最適化されたビルドと静的生成による高速な読み込み
+- **アクセシビリティ**: セマンティックHTMLと適切なコントラスト比
+- **レスポンシブ**: あらゆるデバイスで快適な閲覧体験
+
+### デザイン
+- **モダンなUI/UX**: 最新のデザイントレンドを取り入れた洗練されたインターフェース
+- **アニメーション**: 過度でない、自然な動きによるユーザーガイダンス
+- **視覚的階層**: 情報の重要度に応じた適切なレイアウト設計
+
+## 🔮 今後の展望
+
+- [ ] ブログ機能の追加
+- [ ] お問い合わせフォームの実装
+- [ ] 多言語対応（i18n）
+- [ ] パフォーマンスモニタリングの導入
+- [ ] E2Eテストの追加
+- [ ] CI/CDパイプラインの構築
+
+## 📝 ライセンス
+
+このプロジェクトは個人のポートフォリオサイトです。
+
+## 📧 お問い合わせ
+
+ご質問やフィードバックがございましたら、お気軽にお問い合わせください。
+
+---
+
+**このプロジェクトは、最新のWeb技術を学び、実践することを目的として開発されました。採用担当者の皆様に、私の技術力とデザインセンスをお伝えできれば幸いです。**
