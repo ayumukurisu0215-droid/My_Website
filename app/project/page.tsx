@@ -26,15 +26,29 @@ export default function ProjectsPage() {
                 </span>
               ))}
             </div>
-            
-            <a 
-              href={project.link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm font-medium text-gray-500 hover:text-blue-500 underline"
-            >
-              View on GitHub →
-            </a>
+
+            <div className="mt-2 space-y-3">
+              <p className="text-sm font-semibold text-gray-700">Links</p>
+              <ul className="space-y-2">
+                {project.links.map((link) => (
+                  <li key={`${project.id}-${link.url}`} className="text-sm">
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex flex-col gap-1 text-gray-600 hover:text-blue-600"
+                    >
+                      <span className="font-medium underline">
+                        {link.label}
+                      </span>
+                      <span className="text-xs text-gray-400 break-all">
+                        {link.url}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
       </div>
